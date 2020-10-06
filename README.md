@@ -49,5 +49,5 @@ Run from the WRF root directory:
 * `>> ./run_me_first.csh`
 * `>> rm ozone*`
 * `>> rm RRTMG_*`
-* `>> ./ideal.exe'
-* `>> ./wrf.exe'
+* `>> ./ideal.exe`
+* `>> ./wrf.exe`

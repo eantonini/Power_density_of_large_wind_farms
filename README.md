@@ -15,3 +15,6 @@ Once downloaded, the following commands should be run from the WRF root director
 * `>> ./configure &> log.configure` options 34 and 1
 * `>> ./compile em_convrad >& log.compile`
 
+## Setting up WRF cases
+
+Copy 

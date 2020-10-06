@@ -12,7 +12,7 @@ Once downloaded, the following commands should be run from the WRF root director
 
 * `>> ./clean  &> log.clean1`
 * `>> ./clean -a &> log.clean2`
-* `>> ./configure &> log.configure` options 34 and 1
+* `>> ./configure &> log.configure` with options 34 and 1
 * `>> ./compile em_convrad >& log.compile`
 
 
@@ -29,3 +29,12 @@ Run from the WRF root directory:
 * `>> rm ozone*`
 * `>> rm RRTMG_*`
 * `>> mv windturbines-ij-9,0Wm2.txt windturbines-ij.txt`
+
+
+## Changing WRF set-up files
+
+In the paper, we performed simulations with different combinations of geostrophic winds, Coriolis parameters, and installed power density.
+
+The set-up files included in this repository are for a geostrophic wind of 16 m/s, Coriolis parameter of 1.05 x 10^(-4) rad/s, and installed power density of 9 W/m^2.
+
+

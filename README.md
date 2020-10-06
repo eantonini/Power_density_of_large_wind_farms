@@ -15,14 +15,14 @@ Copy `module_initialize_ideal.F` into `./dyn_em/`
 
 Copy  `input_sounding`, `namelist.input`, `wind-turbine-1.tbl`, `windturbines-ij-9,0Wm2.txt` (or `windturbines-ij-4,5Wm2.txt`)  into `./test/em_convrad/`
 
-Then run `>> mv windturbines-ij-9,0Wm2.txt windturbines-ij.txt`
+Then change `windturbines-ij-9,0Wm2.txt` (or `windturbines-ij-4,5Wm2.txt`) to `windturbines-ij.txt`
 
 
-## Changing WRF set-up files
+## Changing WRF setup files
 
 In the paper, we performed simulations with different combinations of geostrophic winds, Coriolis parameters, and installed capacity density.
 
-The set-up files included in this repository are for a geostrophic wind of 16 m/s, Coriolis parameter of 1.05 x 10^(-4) rad/s, and installed capacity density of 9 W/m^2.
+The setup files included in this repository are for a geostrophic wind of 16 m/s, Coriolis parameter of 1.05 x 10^(-4) rad/s, and installed capacity density of 9 W/m^2.
 
 To change the geostrophic wind, insert the desired value in the fourth column of `input_sounding`.
 
@@ -50,4 +50,4 @@ Run from the WRF root directory:
 * `>> rm ozone*`
 * `>> rm RRTMG_*`
 * `>> ./ideal.exe'
-
+* `>> ./wrf.exe'

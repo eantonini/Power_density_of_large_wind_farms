@@ -33,7 +33,7 @@ Run from the WRF root directory:
 
 ## Changing WRF set-up files
 
-In the paper, we performed simulations with different combinations of geostrophic winds, Coriolis parameters, and installed power density.
+In the paper, we performed simulations with different combinations of geostrophic winds, Coriolis parameters, and installed capacity density.
 
 The set-up files included in this repository are for a geostrophic wind of 16 m/s, Coriolis parameter of 1.05 x 10^(-4) rad/s, and installed capacity density of 9 W/m^2.
 

@@ -15,6 +15,18 @@ Once downloaded, the following commands should be run from the WRF root director
 * `>> ./configure &> log.configure` options 34 and 1
 * `>> ./compile em_convrad >& log.compile`
 
+
 ## Setting up WRF cases
 
+Copy `module_initialize_ideal.F` into `./dyn_em/`
+
 Copy 
+
+
+
+
+
+* `>> cd test/em_convrad/`
+* `>> ./run_me_first.csh`
+* `>> rm ozone*`
+* `>> rm RRTMG_*;`

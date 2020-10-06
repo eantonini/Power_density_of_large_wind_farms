@@ -20,13 +20,12 @@ Once downloaded, the following commands should be run from the WRF root director
 
 Copy `module_initialize_ideal.F` into `./dyn_em/`
 
-Copy 
+Copy  `input_sounding`, `namelist.input`, `wind-turbine-1.tbl`, `windturbines-ij-9,0Wm2.txt` (or `windturbines-ij-4,5Wm2.txt`)  into `./test/em_convrad/`
 
-
-
-
+Run from the WRF root directory:
 
 * `>> cd test/em_convrad/`
 * `>> ./run_me_first.csh`
 * `>> rm ozone*`
-* `>> rm RRTMG_*;`
+* `>> rm RRTMG_*`
+* `>> mv windturbines-ij-9,0Wm2.txt windturbines-ij.txt`

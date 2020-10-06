@@ -8,7 +8,10 @@ Enrico G.A. Antonini, Ken Caldeira, "Atmospheric pressure gradients and Coriolis
 
 WRF 4.2.1 can be downloaded from https://github.com/wrfmodel/WRF/releases/tag/v4.2.1
 
-Once downloaded, the following command should be run from the WRF root directory:
+Once downloaded, the following commands should be run from the WRF root directory:
 
+* `>> ./clean  &> log.clean1`
+* `>> ./clean -a &> log.clean2`
 * `>> ./configure &> log.configure` options 34 and 1
 * `>> ./compile em_convrad >& log.compile`
+

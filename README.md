@@ -33,7 +33,9 @@ To change the installed capacity density, use either `windturbines-ij-9,0Wm2.txt
 
 ## Compiling WRF
 
-The following commands should be run from the WRF root directory:
+Please follow the instructions at https://www2.mmm.ucar.edu/wrf/OnLineTutorial/compilation_tutorial.php to install the required libraries.
+
+The following commands should then be run from the WRF root directory:
 
 * `>> ./clean  &> log.clean1`
 * `>> ./clean -a &> log.clean2`

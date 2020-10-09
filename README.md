@@ -11,9 +11,9 @@ WRF 4.2.1 can be downloaded from https://github.com/wrfmodel/WRF/releases/tag/v4
 
 ## Setting up WRF cases
 
-Copy `module_initialize_ideal.F` into `./dyn_em/`
+Copy `module_initialize_ideal.F` into `$WRF_ROOT_DIRECTORY/dyn_em/`
 
-Copy  `input_sounding`, `namelist.input`, `wind-turbine-1.tbl`, `windturbines-ij-9,0Wm2.txt` (or `windturbines-ij-4,5Wm2.txt`)  into `./test/em_convrad/`
+Copy  `input_sounding`, `namelist.input`, `wind-turbine-1.tbl`, `windturbines-ij-9,0Wm2.txt` (or `windturbines-ij-4,5Wm2.txt`)  into `$WRF_ROOT_DIRECTORY/test/em_convrad/`
 
 Then change `windturbines-ij-9,0Wm2.txt` (or `windturbines-ij-4,5Wm2.txt`) to `windturbines-ij.txt`
 

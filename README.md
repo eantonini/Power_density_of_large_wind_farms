@@ -6,7 +6,7 @@ Enrico G.A. Antonini, Ken Caldeira, "Atmospheric pressure gradients and Coriolis
 
 ## Downloading WRF
 
-WRF 4.2.1 can be downloaded from https://github.com/wrfmodel/WRF/releases/tag/v4.2.1
+WRF 4.2.1 can be downloaded from https://github.com/wrf-model/WRF/releases/tag/v4.2.1
 
 
 ## Setting up WRF cases

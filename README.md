@@ -4,6 +4,8 @@ This repository contains setup files for WRF 4.2.1 to reproduce results of the f
 
 Enrico G.A. Antonini, Ken Caldeira, "Atmospheric pressure gradients and Coriolis forces provide geophysical limits to power density of large wind farms", Applied Energy, in press.
 
+If you need a copy of the paper, please email me at eantonini@carnegiescience.edu
+
 ## Downloading WRF
 
 WRF 4.2.1 can be downloaded from https://github.com/wrf-model/WRF/releases/tag/v4.2.1

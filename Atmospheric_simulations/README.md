@@ -1,4 +1,4 @@
-This folder contains setup files and instructions to reproduce the numerical results using WRF 4.2.1.
+This folder contains setup files and instructions to reproduce the numerical results of the paper using WRF 4.2.1.
 
 
 ## Downloading WRF

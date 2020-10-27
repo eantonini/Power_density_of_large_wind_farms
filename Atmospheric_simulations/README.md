@@ -1,3 +1,6 @@
+This folder contains setup files and instructions to reproduce the numerical results using WRF 4.2.1.
+
+
 ## Downloading WRF
 
 WRF 4.2.1 can be downloaded from https://github.com/wrf-model/WRF/releases/tag/v4.2.1

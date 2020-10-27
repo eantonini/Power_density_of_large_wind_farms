@@ -33,7 +33,7 @@ performance_curve = np.array([[ 0.0,     0.0,  0.00],
                               [30.0,     0.0,  0.00]])
 
 geostrophic_wind_speeds = np.array([8,12,16,20,24])
-coriolis_parameters = np.array([0.05,0.55,1.05,1.35,1.45])
+coriolis_parameters = np.array([0.05,0.55,1.05,1.35,1.45])*10**(-4)
 turbine_densities = np.array([1,0.5])
 
 diameter = 165
@@ -62,14 +62,14 @@ for ii in range(iterations):
         for r in range(len(geostrophic_wind_speeds)):
             for rr in range(len(coriolis_parameters)):
                 for rrr in range(len(turbine_densities)):
-                    u_0[r,rr,rrr] = geostrophic_wind_speeds[r]/((np.log(u_0[r,rr,rrr]/(coriolis_parameters[rr]*10**(-4)*z_0hi[r,rr,rrr]))/kappa-4)**2+12**2)**0.5
+                    u_0[r,rr,rrr] = geostrophic_wind_speeds[r]/((np.log(u_0[r,rr,rrr]/(coriolis_parameters[rr]*z_0hi[r,rr,rrr]))/kappa-4)**2+12**2)**0.5
     u_H = u_0/kappa*np.log(hubheight/z_0hi*(1+0.5*diameter/hubheight)**(nu_w/(1+nu_w)))
 
 Rossby_numbers = np.zeros((len(geostrophic_wind_speeds),len(coriolis_parameters),len(turbine_densities)))
 for r in range(len(geostrophic_wind_speeds)):
     for rr in range(len(coriolis_parameters)):
         for rrr in range(len(turbine_densities)):
-            Rossby_numbers[r,rr,rrr] = geostrophic_wind_speeds[r]/(coriolis_parameters[rr]/10**4*z_0hi[r,rr,rrr])
+            Rossby_numbers[r,rr,rrr] = geostrophic_wind_speeds[r]/(coriolis_parameters[rr]*z_0hi[r,rr,rrr])
 
 mean_power_densities = np.zeros((len(geostrophic_wind_speeds),len(coriolis_parameters),len(turbine_densities)))
 for r in range(len(geostrophic_wind_speeds)):
